@@ -1,0 +1,14 @@
+body{
+        background-image: url('Pictures/black.jpg');
+        color: gold;
+        z-index: -1;
+        position: relative;
+        padding: 20px;
+        
+
+}
+#Heading{
+    background-color: dodgerblue;
+    position: relative;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
