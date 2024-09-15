@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Confirmation</title>
+    <script lang="javascript" type="text/javascript">
+        function Send_notification(){
+            if (confirm("Pay ksh300 to Pata Keja Entreprise\nfor house booking?")){
+                telephone=prompt("Enter MPESA PIN "," ")
+            }
+                    
+        }
+    </script>
+    <link rel="stylesheet" href="PataKeja.css">
+</head>
+<body>
+    <div id="check">
+        <h1>Payment Section</h1>
+        <h3><i>We need to send you a prompt for the payment</i></h3>
+        <form action="process.php" id="phone_number" method="get" >
+        <p>Enter your Telephone Number: </p><input type="tel" id="telephone no"><br><br>
+        <input type="button" value="SUBMIT"  onclick="Send_notification()">
+        </form>
+    </div>
+</body>
+</html>

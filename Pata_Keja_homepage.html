@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PATA KEJA WEBSITE</title>
+    <link rel="stylesheet" href="PataKeja.css">
+    <script lang="Javascript" type="text/javascript">
+        function Check_details(){
+            info=document.getElementById('user_details')
+            window.open("Vacants_Check.html","Vacants","width='600','height='600'")
+            
+        }
+        function clear(id){
+            input=document.getElementById('user_details')
+            val=input.email.value
+            val='Kingpin'
+        }
+    </script>
+</head>
+<body>
+    <div id="Heading">
+        <h1>PATA KEJA WEBSITE</h1>
+        
+    </div>
+    <div id="Entry">
+        <form action="process.php" method="get" id="user_details">
+            <input id="email"  type="email" required value="email" onmouseover="clear('email')"><br><br>
+            <input id="passwd" type="password" required value="password" onmouseover="clear('passwd')"><br><br>
+            <input type="button" value="LOG IN" onclick="Check_details()">
+        </form>
+    </div>
+   <p>Sign up below if you do not have an Account</p>
+   <a href="Sign_up.html"><b>SIGN UP</b></a>
+
+    
+</body>
+</html>
